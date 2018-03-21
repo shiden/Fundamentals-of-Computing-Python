@@ -13,6 +13,7 @@
 
 # Compute a (simplified) Pig Latin version of a word.
 
+#saved as: http://www.codeskulptor.org/#user44_IGyhS2DNxa_0.py
 ###################################################
 # Pig Latin formula
 def pig_latin(word):
@@ -21,7 +22,15 @@ def pig_latin(word):
     first_letter = word[0]
     rest_of_word = word[1 : ]
 
+
     # Student should complete function on the next lines.
+    vowels = ["a","e","i","o","u"]
+    if first_letter in vowels:
+        #print ("first_letter is a vowel: ", first_letter)
+        return word + "way"
+    else:
+        #print ("not a vowel: ", word)
+        return rest_of_word + "ay"
 
 
 
